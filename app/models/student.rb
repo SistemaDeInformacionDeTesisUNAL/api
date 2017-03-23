@@ -7,7 +7,9 @@ class Student < ApplicationRecord
 	has_many :event_has_students
 	has_many :events, through: :event_has_students
 	
-	has_many :user_has_aportes
-	has_many :contributions, through: :user_has_aportes
+	has_many :user_has_contributions
+	has_many :contributions, through: :user_has_contributions
+	
+	has_many :history_groups
 
 end

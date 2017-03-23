@@ -10,4 +10,6 @@ class InvestigationGroup < ApplicationRecord
 	has_many :tags, through: :investigation_group_has_tags
 	
 	has_many :events
+	
+	has_many :history_groups
 end

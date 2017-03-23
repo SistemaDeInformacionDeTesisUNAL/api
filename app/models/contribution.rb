@@ -1,5 +1,5 @@
 class Contribution < ApplicationRecord
-	has_many :user_has_aportes
+	has_many :user_has_contributions
 	has_many :students, through: :user_has_aportes
 	has_many :teachers, through: :user_has_aportes
 	
